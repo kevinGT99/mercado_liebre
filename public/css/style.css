@@ -1,24 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .logo img{
-    width: 50%;
+    width: 40%;
+    max-width: 150px;
+    margin-bottom: 5px;
 }
 body{
     margin: 0;
     padding: 0;
+    background-color:  #ebebeb;
 }
 header{ background-color: #EAC926;
     padding: 10px;}
-    
+
+
     .buscador i{
+        position: absolute;
+        top: 17px;
+        left: 355px;
+        margin: 0px;
         background-color: #ebebeb;
         padding: 5px;
-        border-radius: 3px;
-    }
     
 
+       
+        
+
+    }
+    
+.barra{
+    position: absolute;
+    top: 13px;
+    left: 170px;
+    margin: 3px 3px 5px;
+    cursor: text;
+}
+
+input{
+    padding: 5px;
+    width: 210px;
+}
+
     h5 {
-        font-size: 12px;
+        font-size: 15px;
         text-align: center;
         font-weight: bold;
+        margin: 10px;
+
     }
 
     nav ul {
@@ -30,7 +62,9 @@ header{ background-color: #EAC926;
         color: black;
         font-family: 'Roboto', sans-serif;
         margin-right: 4px;
+
     }
+    nav{display: none;}
 
     
 
@@ -49,12 +83,13 @@ p {
     color: #ebebeb;
     padding: 7px;
     border-radius: 3px;
+    cursor: pointer;
+    margin-top: 8px;
 
 }
 
 .banner {
-    padding: 10px;
-    background-color: #ebebeb;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -62,10 +97,14 @@ p {
 h2 {
         font-family: 'Roboto', sans-serif;
         font-size: 24px;
+        text-align: center;
+        padding: 15px;
     }
 
 
 .truck i{
+        margin-bottom: 10px;
+        display: flex;
         color: #39b54a;
         text-align: left;
 
@@ -89,6 +128,8 @@ h2 {
     footer {
         text-align: center;
         padding: 10px 0px;
+        background-color: white;
+        margin-top: 15px;
     }
     footer h3 p {
         font-family: 'Roboto', sans-serif;
@@ -98,3 +139,66 @@ h2 {
         color: #1259c3;
         font-size: 24px;
     }
+
+main {
+    margin: auto;
+    width: 90%;
+    
+    
+    
+
+}
+
+.articulo{
+    margin: auto;
+    margin-top: 10px;
+    border: solid 1px #ebebeb;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    box-shadow:7px 7px 7px #bfbeba;
+}
+
+.descripcion{
+    text-align: left;
+}
+
+
+@media(min-width:425px){
+   
+    
+    }
+
+
+@media(min-width:767px){
+    .burger-menu{display: none;}
+    input{width: 400px;}
+    .buscador i{position: absolute;
+                top:18px;
+                left: 545px;}
+    nav{display:flex;
+        justify-content: space-between;
+        margin: 30px 0px 0px;
+        visibility: visible;}
+    .opcionesA, .opcionesB{
+        display: flex;
+        gap: 2rem;}
+
+           
+    
+}
+@media(min-width:1024px){
+    input{width:450px;}
+
+    .buscador i{position: absolute;
+                top:18px;
+                left: 596px;}
+
+    .opcionesA, .opcionesB{
+                display: flex;
+                gap: 4rem;}
+
+    h5{position: absolute;
+       top: 13px;
+       left:780px;}       
+}
