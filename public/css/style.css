@@ -107,8 +107,11 @@ h2 {
         display: flex;
         color: #39b54a;
         text-align: left;
-
+        transition: all 450ms;
     }
+.truck i:hover{
+    transform: rotate(-90deg);
+}
 
     .precio {
         font-size: 18px;
@@ -120,10 +123,16 @@ h2 {
     }
 
     .producto{
-        font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin: 0px 0px 20px 0px;
     color:#575957;
+    
+    }
+
+    .producto:hover{
+        visibility: visible;
+
     }
     footer {
         text-align: center;
@@ -156,9 +165,12 @@ main {
     padding: 15px;
     text-align: center;
     background-color: white;
-    box-shadow:7px 7px 7px #bfbeba;
+    transition: all 450ms;
 }
 
+.articulo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 .descripcion{
     text-align: left;
 }
@@ -220,7 +232,11 @@ main {
     top: 40px;
     left: 490px;
 }
-
+.contenedor-articulo{
+    display: flex;
+    
+    
+}
 @media(min-width:425px){
    
     
