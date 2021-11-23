@@ -1,0 +1,13 @@
+{
+    "name": "mercado-liebre-proyecto",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+    "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kevinGT99/mercado_liebre.git"
+    }
+    
+}
